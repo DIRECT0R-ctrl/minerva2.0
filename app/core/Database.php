@@ -16,4 +16,16 @@ final class Database
             \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
         ]);
     }
+    public static function getInstance(array $config): Database
+    {
+        if (self::$instance === null) {
+            self::$instance = new Database($config);
+        }
+        return self::$instance;
+    }
+
+    public function getConnection(): \PDO
+    {
+        return $this->pdo;
+    }
 }
