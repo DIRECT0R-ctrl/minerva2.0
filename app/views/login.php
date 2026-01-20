@@ -1,17 +1,47 @@
 <?php include 'header.php'; ?>
 
-<h2>Connexion</h2>
+<div class="min-h-screen flex items-center justify-center bg-gray-100">
+    <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
 
-<form method="POST">
-    <label>Email</label><br>
-    <input type="email" name="email" required><br><br>
+        <h2 class="text-2xl font-bold text-center text-blue-600 mb-6">
+            Connexion
+        </h2>
 
-    <label>Mot de passe</label><br>
-    <input type="password" name="password" required><br><br>
+        <form method="POST" class="space-y-4">
 
-    <button type="submit">Se connecter</button>
-</form>
+            <div>
+                <label class="block text-gray-700 font-medium mb-1">
+                    Email
+                </label>
+                <input type="email" name="email" required
+                       class="w-full border border-gray-300 rounded px-3 py-2
+                              focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
 
-<p>Pas encore de compte ? <a href="register.php">S'inscrire</a></p>
+            <div>
+                <label class="block text-gray-700 font-medium mb-1">
+                    Mot de passe
+                </label>
+                <input type="password" name="password" required
+                       class="w-full border border-gray-300 rounded px-3 py-2
+                              focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <button type="submit"
+                    class="w-full bg-blue-600 text-white py-2 rounded
+                           hover:bg-blue-700 transition">
+                Se connecter
+            </button>
+        </form>
+
+        <p class="text-center text-sm text-gray-600 mt-4">
+            Pas encore de compte ?
+            <a href="register.php" class="text-blue-600 hover:underline">
+                S'inscrire
+            </a>
+        </p>
+
+    </div>
+</div>
 
 <?php include 'footer.php'; ?>
