@@ -14,4 +14,10 @@ $router->get('/', ['HomeController', 'index']);
 
 $router->dispatch($_SERVER['REQUEST_URI']);
 
+$router->get('/login', ['AuthController', 'showLogin']);
+$router->post('/login', ['AuthController', 'login']);
+$router->get('/logout', ['AuthController', 'logout']);
+
+$router->get('/teacher/dashboard', ['TeacherController', 'dashboard']);
+$router->get('/student/dashboard', ['StudentController', 'dashboard']);
 
