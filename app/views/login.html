@@ -1,81 +1,42 @@
-<?php
- session_start();
-if (isset($_SESSION['user'])) {
-   header('Location: dashboard_student.php');
-     exit;
- }
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Connexion | Minerva</title>
-
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body class="bg-gray-100 min-h-screen">
 
-<!-- HEADER -->
 <header class="bg-blue-600 text-white p-4 text-center shadow">
-    <h1 class="text-2xl font-bold"> Minerva – Connexion Étudiante</h1>
+    <h1 class="text-2xl font-bold">🎓 Minerva – Connexion Étudiante</h1>
 </header>
 
-<!-- LOGIN FORM -->
 <div class="flex items-center justify-center mt-16">
     <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
-
-        <h2 class="text-2xl font-bold text-center text-blue-600 mb-6">
-            Se connecter
-        </h2>
-
+        <h2 class="text-2xl font-bold text-center text-blue-600 mb-6">Se connecter</h2>
         <form method="POST" class="space-y-5">
-
-            <!-- EMAIL -->
             <div>
-                <label class="block text-gray-700 font-medium mb-1">
-                    Email
-                </label>
+                <label class="block text-gray-700 font-medium mb-1">Email</label>
                 <input type="email" name="email" required
-                       class="w-full border border-gray-300 rounded px-3 py-2
-                              focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
-
-            <!-- PASSWORD -->
             <div>
-                <label class="block text-gray-700 font-medium mb-1">
-                    Mot de passe
-                </label>
+                <label class="block text-gray-700 font-medium mb-1">Mot de passe</label>
                 <input type="password" name="password" required
-                       class="w-full border border-gray-300 rounded px-3 py-2
-                              focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
-
-            <!-- BUTTON -->
             <button type="submit"
-                    class="w-full bg-blue-600 text-white py-2 rounded
-                           hover:bg-blue-700 transition font-semibold">
-                Connexion
-            </button>
+                class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition font-semibold">Connexion</button>
         </form>
-
-        <!-- REGISTER LINK -->
         <p class="text-center text-sm text-gray-600 mt-5">
             Pas encore de compte ?
-            <a href="register.php" class="text-blue-600 hover:underline font-medium">
-                S'inscrire
-            </a>
+            <a href="register.php" class="text-blue-600 hover:underline font-medium">S'inscrire</a>
         </p>
-
     </div>
 </div>
 
-<!-- FOOTER -->
 <footer class="text-center text-gray-500 text-sm mt-10">
     © <?= date('Y') ?> Minerva – Plateforme éducative
 </footer>
-
 </body>
 </html>
