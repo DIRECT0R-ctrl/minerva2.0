@@ -18,7 +18,7 @@ if (!isset($_SESSION['user']) || $_SESSION['role'] !== 'student') {
 
 <!-- HEADER -->
 <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
-    <h1 class="text-xl font-bold">🎓 Minerva – Espace Étudiante</h1>
+    <h1 class="text-xl font-bold"> Minerva – Espace Étudiante</h1>
     <a href="logout.php" class="bg-red-500 px-4 py-2 rounded hover:bg-red-600">
         Déconnexion
     </a>
@@ -29,10 +29,10 @@ if (!isset($_SESSION['user']) || $_SESSION['role'] !== 'student') {
     <!-- SIDEBAR -->
     <aside class="w-64 bg-white h-screen shadow-md">
         <nav class="p-4 space-y-4">
-            <a href="#profil" class="block text-gray-700 hover:text-blue-600 font-medium">👩‍🎓 Mon profil</a>
-            <a href="#travaux" class="block text-gray-700 hover:text-blue-600 font-medium">📚 Mes travaux</a>
-            <a href="#notes" class="block text-gray-700 hover:text-blue-600 font-medium">📝 Mes notes</a>
-            <a href="#chat" class="block text-gray-700 hover:text-blue-600 font-medium">💬 Chat de classe</a>
+            <a href="#profil" class="block text-gray-700 hover:text-blue-600 font-medium">Mon profil</a>
+            <a href="#travaux" class="block text-gray-700 hover:text-blue-600 font-medium"> Mes travaux</a>
+            <a href="#notes" class="block text-gray-700 hover:text-blue-600 font-medium"> Mes notes</a>
+            <a href="#chat" class="block text-gray-700 hover:text-blue-600 font-medium"> Chat de classe</a>
         </nav>
     </aside>
 
@@ -42,9 +42,9 @@ if (!isset($_SESSION['user']) || $_SESSION['role'] !== 'student') {
         <!-- PROFIL -->
         <section id="profil" class="bg-white rounded shadow p-6">
             <h2 class="text-xl font-semibold mb-4">Mon profil</h2>
-            <p><strong>Nom :</strong> Sara Abbih</p>
-            <p><strong>Email :</strong> sara@email.com</p>
-            <p><strong>Classe :</strong> Génie Informatique</p>
+            <p><strong>Nom :</strong> Sarra Abbih</p>
+            <p><strong>Email :</strong> sarra@email.com</p>
+            <p><strong>Classe :</strong>develomppent web  </p>
         </section>
 
         <!-- TRAVAUX -->
