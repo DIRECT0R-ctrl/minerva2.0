@@ -24,6 +24,12 @@ final class Router
     public function dispatch(string $uri): void
     {
         $path = parse_url($uri, PHP_URL_PATH) ?? '/';
+
+         if ($path !== '/') {
+        $path = rtrim($path, '/');
+    }
+
+    
         $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
 
         $action = $this->routes[$method][$path] ?? null;
