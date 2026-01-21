@@ -3,6 +3,11 @@ declare(strict_types=1);
 
 class Controller
 {
+    public function __construct(array $config)
+    {
+        $this->config = $config;
+    }
+
     protected function view(string $viewName, array $data = []): void
     {
         // make $data variables available in the view
