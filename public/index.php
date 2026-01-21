@@ -9,10 +9,7 @@ require_once __DIR__ . '/../app/core/Router.php';
 
 $router = new Router($config);
 
-
 $router->get('/', ['HomeController', 'index']);
-
-$router->dispatch($_SERVER['REQUEST_URI']);
 
 $router->get('/login', ['AuthController', 'showLogin']);
 $router->post('/login', ['AuthController', 'login']);
@@ -21,3 +18,7 @@ $router->get('/logout', ['AuthController', 'logout']);
 $router->get('/teacher/dashboard', ['TeacherController', 'dashboard']);
 $router->get('/student/dashboard', ['StudentController', 'dashboard']);
 
+$router->get('/register', ['AuthController', 'showRegister']);
+$router->post('/register', ['AuthController', 'register']);
+
+$router->dispatch($_SERVER['REQUEST_URI']);
