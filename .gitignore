@@ -1,0 +1,26 @@
+OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+Dependencies
+/vendor/
+
+Secrets / local config
+.env
+.env.*
+app/config/config.php
+
+Logs / cache / sessions
+*.log
+*.cache
+*.tmp
+*.session
+minerva.session.sql
+storage/
+cache/
+logs/
+
+Uploads (later)
+public/uploads/
