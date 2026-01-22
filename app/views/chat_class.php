@@ -9,7 +9,7 @@
 
 <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
     <h1 class="text-xl font-bold">Chat de Classe</h1>
-    <a href="dashboard_student.php" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">Retour</a>
+    <a href="dashboard_student.php" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-30Espace0">Retour</a>
 </header>
 
 <div class="flex-1 p-6 overflow-y-auto space-y-4">
