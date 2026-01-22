@@ -1,13 +1,15 @@
 <?php
 require_once __DIR__ . '/../core/Database.php';
 
+
 class ClassService
 {
+    
     private $db;
 
     public function __construct()
     {
-        $this->db = Database::getInstance()->getConnection();
+         $this->db = Database::getInstance($config)->getConnection();
     }
 
     public function createClass($name, $teacherId)

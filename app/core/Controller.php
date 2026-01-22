@@ -1,8 +1,11 @@
 <?php
-declare(strict_types=1);
+   declare(strict_types=1);
+
 
 class Controller
 {
+    protected array $config;
+
     public function __construct(array $config)
     {
         $this->config = $config;
